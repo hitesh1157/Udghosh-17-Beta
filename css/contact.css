@@ -9,13 +9,15 @@
         }
     }
 */
+
+
     blockquote.large {
         font-size: 36px;
         font-weight: 700;
         color: #fff;
         line-height: 1.1em;
 
-        font-family: Helvetica;
+        font-family: 'Open Sans', sans-serif;
     }
 
     blockquote.large:before {
@@ -48,7 +50,7 @@
 
     .title>a {
         font-size: 18px;
-        font-family: Helvetica;
+        font-family: 'Archivo', sans-serif;
         font-weight: 300;
         color: #fff;
     }
@@ -327,7 +329,7 @@
         }
     }
 
-    .head{font-family: Helvetica; font-weight: 500; color: #fff;}
+    .head{font-family: 'Saira', sans-serif; font-weight: 500; color: #fff;}
     .title > a{font-size: 20px;}
     .br {
         font-size: 16px;
@@ -355,10 +357,11 @@
     width: 240px;
     height: 240px;
     background-size:cover
+
 }
 
 .ch-img-2 { 
-    background-image: url('../Register/img/core-team/tarun.jpg');
+    background-image: url('../Register/img/core-team/tarun.png');
     width: 240px;
     height: 240px;
     background-size:cover
@@ -528,3 +531,73 @@
 .ch-item:hover .ch-info p {
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 767px){
+                    .offset {margin-left: 74px;}
+    .offset-one{margin-left: 74px;}
+            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        width: 200px;
+        height: 200px;
+    }    
+    .blah{margin-left: 74px;}
+.card.hovercard{text-align: left;}
+.card.hovercard .info{padding: 4px 35px 10px;}
+.card.hovercard .bottom{padding: 0 80px;}
+
+/*.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3:not(.blah), .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4:not(.blah), .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+    padding-left: 100px;
+}
+
+.col-lg-3.col-sm-4.blah{padding-left: 200px;}*/
+
+}
+
+}
+
+
+@media only screen and (min-width: 768px){
+                    .offset {margin-left: 120px;}
+    .offset-one{margin-left: 230px;}
+            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        width: 200px;
+        height: 200px;
+    }    
+    /*div.card.hovercard{padding-left: 100px}*/
+
+}
+
+        @media only screen and (min-width: 992px) {
+                .offset {margin-left: 140px;}
+    .offset-one{margin-left: 320px;}
+    h2.head{margin-right: 100px;}
+
+        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        width: 240px;
+        height: 240px;
+    }
+
+
+
+    }
+
+
+
+        @media only screen and (min-width: 1200px) {
+                .offset {margin-left: 250px;}
+    .offset-one{margin-left: 400px;}
+    h2.head{margin-right: 100px;}
+
+        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        width: 240px;
+        height: 240px;
+    }
+
+
+
+    }
+
+
+
+
+

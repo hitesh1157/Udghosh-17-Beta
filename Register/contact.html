@@ -12,65 +12,79 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../css/animate.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-                <script type="text/javascript">
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-            </script>
-
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="body" style="overflow: auto;position: fixed; background-image: url('../img/homebackground.png'); /*background-color: #333;*/ background-size: 100%;">
+    <div class="body" style="overflow: auto; position: fixed;  background-image: url('img/homebackground.png'); background-color: #fff; background-size: 100%;">
+        <!-- Navigation Bar -->
         <div class="topnav" id="myTopnav">
             <div class="navbar-header"><a class="navbar-brand" href="#"><img src="img/logo.png" >
         </a></div>
             <span class="cl-effect-1"><a href="#">EVENTS</a></span>
             <span class="cl-effect-1"><a href="#">GALLERY</a></span>
-            <span class="cl-effect-1"><a href="/Users/hiteshkr/gitrep/Udghosh-17/Register/contact.html">TEAM</a></span>
+            <span class="cl-effect-1"><a href="#">TEAM</a></span>
             <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
-            <button class="button button3"><a href="Login/signup.html">REGISTER</a></button>
-            <li class="faq"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
             <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+            <a style="float:none; display: inline" href="Register/signup.html">
+                <button class="button button3">REGISTER</button>
+            </a>
+            <li class="faq" data-toggle="modal" data-target="#myModal"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
           <span class="fa-stack fa-lg" style="font-size: 1em;">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
         </span></a></li>
-            
         </div>
-
-
-
-        <div class="pcards" style="margin-top: 40px;">
+        <nav class=" hidden-md hidden-lg navbar navbar-default  ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+        </a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="cl-effect-1"><a href="#">HOME</a></li>
+                    <li class="cl-effect-1"><a href="#">EVENTS</a></li>
+                    <li class="cl-effect-1"><a href="#">GALLERY</a></li>
+                    <li class="cl-effect-1"><a href="#">TEAM</a></li>
+                    <li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pcards" style="margin-top: 80px;">
             <div class="span12 aligncenter flyLeft animated fadeInLeftBig">
-                
                 <blockquote class="large">
                     We offer a platform for students from all over India to showcase their talent and compete with the best upcoming sport persons in the country in a highly charged and competitive ambiance with highly equipped sports facilities.
                 </blockquote>
             </div>
-         </div>
+        </div>
         <div class="container pcards" style="margin-bottom: 100px;">
-        
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig main ch-grid">
-            
                 <h2 class="head">FESTIVAL COORDINATORS</h2>
                 <!-- A1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-3">
+                <div class="col-lg-3 col-sm-4 offset">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-1">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Nitin Sangwan</h3>
                                 <p><a href="mailto:nitin@udghosh.org">nitin<br>@udghosh.org</a>+918175989891</p>
@@ -80,31 +94,21 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/nitin.sangwan.902">Nitin Sangwan</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/nitin.sangwan.902">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                           <!--  <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
                 <!-- A2 -->
-                <div class="col-lg-3 col-sm-4">
+                <div class="col-lg-3 col-sm-4 blah">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-2">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Tarun Rathor</h3>
                                 <p><a href="mailto:tarun@udghosh.org">tarun@udghosh.org</a>+918960806967</p>
@@ -114,41 +118,27 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/tarun.rathore.31">Tarun Rathor</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/tarun.rathore.31">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                           <!--  <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
             <style type="text/css">
 
-                </style>
-
+            </style>
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig" style="">
                 <h2 class="head">HEAD, EVENTS</h2>
                 <!-- B1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-3">
+                <div class="col-lg-3 col-sm-4 offset">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-3">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Avani Rathore</h3>
                                 <p><a href="mailto:avani@udghosh.org">avani@udghosh.org</a>+918175989891</p>
@@ -158,31 +148,21 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/avani3051">Avani Rathore</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/avani3051">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
                 <!-- B2 -->
-                <div class="col-lg-3 col-sm-4">
+                <div class="col-lg-3 col-sm-4 blah">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-4">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Kartik Mittal</h3>
                                 <p><a href="mailto:kartik@udghosh.org">kartik@udghosh.org</a>+918317029798</p>
@@ -192,35 +172,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/karmit796">Kartik Mittal</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/karmit796">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig" style="">
                 <h2 class="head">HEAD, DESIGN</h2>
                 <!-- C1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-4-5">
+                <div class="col-lg-3 col-sm-4 offset-one">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-5">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Kapil Verma</h3>
                                 <p><a href="mailto:99kapilverma@gmail.com">99kapilverma<br>@udghosh.org</a>+918960620193</p>
@@ -230,36 +199,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/99kapilverma">Kapil Verma</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/99kapilverma">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, MARKETING</h2>
                 <!-- D1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-4-5">
+                <div class="col-lg-3 col-sm-4 offset-one">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-6">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Monil Pokar</h3>
                                 <p><a href="mailto:udghosh.marketing@gmail.com">udghosh.marketing<br>@udghosh.org</a>+919113044636</p>
@@ -269,36 +226,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/monil.pokar">Monil Pokar</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/monil.pokar">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                           <!--  <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-                
             </div>
-
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, SHOW MANAGEMENT</h2>
                 <!-- E1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-4-5">
+                <div class="col-lg-3 col-sm-4 offset-one">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-7">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Himanshu Jain</h3>
                                 <p><a href="mailto:himanshu@udghosh.org">himanshu<br>@udghosh.org</a>+917597698229</p>
@@ -308,36 +253,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100009867580263">Himanshu Jain</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/profile.php?id=100009867580263">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-                
             </div>
-
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, MEDIA AND PUBLICITY</h2>
                 <!-- F1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-3">
+                <div class="col-lg-3 col-sm-4 offset">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-8">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Tej Bahadur Darjee</h3>
                                 <p><a href="mailto:teju@udghosh.org">teju@udghosh.org</a>+919793826662</p>
@@ -347,31 +280,21 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/ujjwal.darjee">Tej Bahadur Darjee</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/ujjwal.darjee">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
                 <!-- F2 -->
-                <div class="col-sm-3">
+                <div class="col-sm-3 col-sm-4 blah">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-9">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Shashank S </h3>
                                 <p><a href="mailto:shashank@udghosh.org">shashank<br>@udghosh.org</a>+919005675798</p>
@@ -381,35 +304,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/Prince.Shashank">Shashank S </a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/Prince.Shashank">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, HOSPITALITY</h2>
                 <!-- G1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-4-5">
+                <div class="col-lg-3 col-sm-4 offset-one">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-10">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Naveed Imran</h3>
                                 <p><a href="mailto:naveed@udghosh.org">naveed<br>@udghosh.org</a>+917755057629</p>
@@ -419,36 +331,24 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/naveedimran1729">Naveed Imran</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/naveedimran1729">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, PUBLIC RELATIONS</h2>
                 <!-- H1 -->
-                <div class="col-lg-3 col-sm-4 col-md-offset-3">
+                <div class="col-lg-3 col-sm-4 offset">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-11">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Shriya Mandarapu</h3>
                                 <p><a href="mailto:shriya@udghosh.org">shriya@udghosh.org</a>+917054115262</p>
@@ -458,31 +358,21 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/shriya.mandarapu">Shriya Mandarapu</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/shriya.mandarapu">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
                 <!-- H2 -->
-                <div class="col-lg-3 col-sm-4">
+                <div class="col-lg-3 col-sm-4 blah">
                     <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-12">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Harsh Meena</h3>
                                 <p><a href="mailto:harsh@udghosh.org">harsh@udghosh.org</a>+917755057567</p>
@@ -492,35 +382,23 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/harsh.mufc.95">Harsh Meena</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/harsh.mufc.95">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="row span12 aligncenter flyRight animated fadeInLeftBig">
                 <h2 class="head">HEAD, WEB AND ANDROID</h2>
-                <div class="col-lg-3 col-sm-4 col-md-offset-4-5">
-<div class="card hovercard">
+                <div class="col-lg-3 col-sm-4 offset-one">
+                    <div class="card hovercard">
                         <div class="cardheader">
                         </div>
                         <div class="avatar ch-item ch-img-13">
-                            <!-- <img alt="" src="img/core-team/nitin.jpg"> -->
                             <div class="ch-info">
                                 <h3>Subham Goyal</h3>
                                 <p><a href="mailto:subham@udghosh.org">subham<br>@udghosh.org</a>+918948340341</p>
@@ -530,33 +408,36 @@
                             <div class="title">
                                 <a target="_blank" href="https://www.facebook.com/subham0312">Subham Goyal</a>
                             </div>
-                            <!-- <div class="desc">nitin@udghosh.org</div>
-                            <div class="desc">8175989891</div> -->
-                            
                         </div>
                         <div class="bottom">
                             <a class="" rel="publisher" href="https://www.facebook.com/subham0312">
                         <i class="fa fa-facebook"></i>
 
                     </a>
-                            <!-- <a class="" href="https://twitter.com/webmaniac">
-                        <i class="fa fa-twitter"></i>
-                    </a> -->
-                            <a class="" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    
+    <div class="foot ">
+        <div class="footer-social-icons ">
+            <ul class="social-icons ">
+                <li><a href="https://www.facebook.com/udghosh.iitk/ " class="social-icon "> <i class="fa fa-facebook "></i></a></li>
+                <li><a href="https://twitter.com/udghoshiitk " class="social-icon "> <i class="fa fa-twitter "></i></a></li>
+                <li><a href="https://www.youtube.com/user/udghosh11 " class="social-icon "> <i class="fa fa-youtube "></i></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/7575911/ " class="social-icon "> <i class="fa fa-linkedin "></i></a></li>
+                <li><a href="https://plus.google.com/101958681892074759002?hl=en " class="social-icon "> <i class="fa fa-google-plus "></i></a></li>
+                <div id="register ">
+                    <li class="register "><a href="Register/signup.html ">REGISTER</a></li>
+                </div>
+            </ul>
+        </div>
+        <div id="creative " style="color: #cccccc; float: right; margin-right: 30px;margin-top:7px; "><i class="fa fa-copyright " aria-hidden="true "></i><span style="padding-left: 5px;font-size: 13px; ">Creatives Udghosh 2017</span></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/modernizr.custom.79639.js"></script>
-    
 </body>
 
 </html>
